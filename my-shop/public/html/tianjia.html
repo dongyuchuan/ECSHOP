@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<title>Document</title>
+<link rel="stylesheet" href="../css/tianjia.css" />
+<script src="/javascripts/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="list-header">
+	<a class="a1" href="#">ECSHOP 管理中心</a>
+	<span>- 商品列表</span>
+	<img src="http://www.doudoufei.top/shops/admin/images/jnsy.png" alt="" />
+	<a class="a2" href="#">添加新商品</a>
+</div>
+<div class="tj-content">
+	<ul>
+		<li><a href="/html/addgoods.html" target="list-content">通用信息</a></li>
+		<li><a href="/html/xiangqing.html" target="list-content">详细描述</a></li>
+		<li><a href="/html/qita.html"  target="list-content">其他信息</a></li>
+		<li><a href="/html/shuxing.html" target="list-content">商品属性</a></li>
+		<li><a href="/html/xiangce.html" target="list-content">商品相册</a></li>
+		<li><a href="/html/guanlian.html" target="list-content">关联商品</a></li>
+		<li><a href="/html/peijian.html" target="list-content">配件</a></li>
+		<li><a href="/html/wenzhang.html" target="list-content">关联文章</a></li>
+	</ul>
+<div class="a22" style="width: 80%;">
+	
+<iframe id="list-content" name="list-content"   src="/html/addgoods.html" width="100%" height="1000"  frameborder="no">
+				
+</iframe>
+</div>
+
+</body>
+</html>
+<script>
+		//  $().ready(function(){   })
+	//  $().click(function(){   })
+	$("ul li").click(function(){
+		$("ul li" ).css("background","#efefef");//将所有标题的背景颜色清空默认色
+		$(this).css("background","#FFFFFF"); //留下当前操作的li的背景颜色
+	})
+
+</script>

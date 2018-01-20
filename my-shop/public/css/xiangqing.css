@@ -1,0 +1,46 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.tab3{
+	background: #fefefe;
+	padding:10px;
+}
+table{
+	margin:0 auto;
+	font-size: 12px;
+}
+.label{
+	text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 5px 1em;
+    width: 30%;
+    line-height: 30px;
+   
+}
+.tj-cz {
+	text-align: center;
+    padding: 3px 0;
+}
+
+.button{
+	padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+/*footer*/
+.list-footer2{
+	background: #f3f3f3 url(http://www.doudoufei.top/shops/admin/images/th_bg.gif) repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 600px;
+}

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="../css/addgoods.css" />
+<script src="../public/javascripts/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+	<div class="tab3">
+			<form enctype="multipart/form-data" action="" method="post" name="theForm">
+				<table  width="90%" align="center">
+				<tbody>
+					<tr>
+						<td class="label">商品名称:</td>
+						<td>
+							<input type="text" class="goods_name" style="width: 195px;"/>
+							<div>
+								<img src="http://www.doudoufei.top/shops/admin/images/color_selecter.gif" alt="" />
+								<input type="hidden" />
+							</div>
+							<select name="goods_name_style">
+										<option value="" selected="selected">字体样式</option>
+										<option value="strong">加粗</option>
+										<option value="em">斜体</option>
+										<option value="u">下划线</option>
+										<option value="strike">删除线</option>
+									</select>
+							<span class="xing">*</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><a href="#"><img src="http://www.doudoufei.top/shops/admin/images/notice.gif"/></a>商品货号:</td>
+						<td  class="label2">
+							<input type="text" class="goods_sn"/>
+							<br><br>
+							<span class="notice-span">如果您不输入商品货号，系统将自动生成一个唯一的货号。</span>	
+						</td>
+					</tr>
+					<tr>
+						<td class="label">商品分类:</td>
+						<td>
+							<select name="" id="" style="width: 158px;">
+								<option value >请选择..</option>
+							</select>
+							<a class="a1" href="#">添加分类</a>
+							<span class="xing">*</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">扩展分类:</td>
+						<td>
+							<input type="button" class="button" value="添加"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">商品品牌:</td>
+						<td>
+							<select name="brand_id" class="brand_id">
+										<option value="0" selected="selected">请选择...</option>
+										<option value="44">kk</option>
+										<option value="32">溢彩年华</option>
+										<option value="31">EVENY</option>
+										<option value="30">圣迪奥</option>
+										<option value="29">韩都衣舍</option>
+										<option value="28">betu百图</option>
+										<option value="27">艾夫斯</option>
+										<option value="26">太平鸟</option>
+										<option value="25">O.SA</option>
+										<option value="33">空间大师</option>
+										<option value="34">美好家</option>
+										<option value="35">生活诚品</option>
+										<option value="43">帮宝适</option>
+										<option value="42">贝亲</option>
+										<option value="41">雅培</option>
+										<option value="40">好事达</option>
+										<option value="39">千弘</option>
+										<option value="38">美亿佳</option>
+										<option value="37">大豪</option>
+										<option value="36">宝优妮</option>
+										<option value="24">裂帛</option>
+										<option value="23">JNBY 江南布衣</option>
+										<option value="22">LILY</option>
+										<option value="9">联想</option>
+										<option value="8">惠普</option>
+										<option value="7">美的</option>
+										<option value="6">天翼</option>
+										<option value="5">漫步者</option>
+										<option value="4">希捷</option>
+										<option value="3">方正</option>
+										<option value="2">APPLE</option>
+										<option value="10">金立</option>
+										<option value="11"> 恒基伟业</option>
+										<option value="12">夏普</option>
+										<option value="21">白领</option>
+										<option value="19">acer</option>
+										<option value="18">AMD</option>
+										<option value="17">爱普生</option>
+										<option value="20">茵佳妮</option>
+										<option value="15">乐华</option>
+										<option value="14">创维</option>
+										<option value="13">索尼</option>
+										<option value="1">有讯网络</option>
+									</select>
+							<a class="a1" href="#">添加分类</a>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">本店售价:</td>
+						<td>
+							<input type="text" style="width: 135px;" value="0" class="shop_price"/ >
+							<input type="button"  value="按市场价算"/>
+							<span class="xing">*</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><a href="#"><img src="http://www.doudoufei.top/shops/admin/images/notice.gif"/></a>会员价格:</td>
+						<td>
+							<i>注册用户</i><input type="text"  style="width: 85px;"value="-1"/>
+							<i>代销用户</i><input type="text" style="width: 85px;" value="-1"/>
+							<i>vip</i><input type="text" style="width: 85px;" value="-1"/>
+							<br><br>
+							<span class="notice-span">会员价格为-1时表示会员价格按会员等级折扣率计算。你也可以为每个等级指定一个固定价格</span>	
+							
+						</td>
+					</tr>
+					<tr>
+						<td class="label">商品优惠价格:</td>
+						<td><a class="a2" href="#">[+]</a>
+							<i>优惠数量</i><input type="text" style="width: 85px;" />
+							<i>优惠价格</i><input type="text" style="width: 85px;" />
+							<br><br>
+							<span class="notice-span">购买数量达到优惠数量时享受的优惠价格</span>	
+						</td>
+					</tr>
+					<tr>
+						<td class="label">市场售价:</td>
+						<td>
+							<input type="text" style="width: 135px;" value="0" class="market_price" >
+							<input type="button"  value="取整"/>
+							<span class="xing">*</span>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">虚拟销量:</td>
+						<td>
+							<input type="text" style="width: 135px;" value="0" class="virtual_sales"/ >
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><a href="#"><img src="http://www.doudoufei.top/shops/admin/images/notice.gif"/></a>赠送消费等级积分:</td>
+						<td>
+							<input type="text" style="width: 85px;" />
+							<br><br>
+							<span class="notice-span">购买该商品时赠送消费积分数,-1表示按商品价格赠送</span>	
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><a href="#"><img src="http://www.doudoufei.top/shops/admin/images/notice.gif"/></a>赠送消费等级积分:</td>
+						<td>
+							<input type="text" style="width: 85px;" value="-1" />
+							<br><br>
+							<span class="notice-span">购买该商品时赠送消费积分数,-1表示按商品价格赠送</span>	
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><a href="#"><img src="http://www.doudoufei.top/shops/admin/images/notice.gif"/></a>积分购买金额:</td>
+						<td>
+							<input type="text" style="width: 85px;" value="0" />
+							<br><br>
+							<span class="notice-span">(此处需填写金额)购买该商品时最多可以使用积分的金额</span>	
+						</td>
+						</td>
+					</tr>
+					<tr>
+						<td class="label"><input type="checkbox" />促销价:</td>
+						<td>
+							<input type="text" style="width: 85px; background: #999999;" value="0" />
+						</td>
+					</tr>
+					<tr>
+						<td class="label">促销日期：:</td>
+						<td>
+							<select name="" id="" style="width: 105px;">
+								<option value >2018-01-18</option>
+							</select>
+							<input type="button" class="button" value="选择"/>
+							<select name="" id="" style="width: 105px;">
+								<option value >2018-02-17</option>
+							</select>
+							<input type="button" class="button" value="选择"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">上传商品图片:</td>
+						<td>
+							<input type="file"value="选择文件" style="color:#aaa;" class="goods_img">				
+							<img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" />
+							<br /><br />
+							<input type="text"  value="商品图片外部URL" class="goods_img"/>
+						</td>
+					</tr>
+					<tr>
+						<td class="label">上传商品缩略图：:</td>
+						<td>
+							<input type="button"  value="选择文件"/>
+							<img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" />
+							<br /><br />
+							<input type="text" style="width: 150px;" value="商品图片外部URL" />
+							<br /><br />
+							<input type="checkbox" />自动生成商品缩略图
+						</td>
+					</tr>
+				</tbody>
+				</table> 
+				<div class="tj-cz">
+						<input type="button" class="button button_date" value="确定"/>
+						<input type="button" class="button button_reset" value="重置"/>
+				</div>
+			</form>
+	</div>
+</div>
+<div class="list-footer2">
+共执行 7 个查询，用时 0.022776 秒，Gzip 已禁用，内存占用 3.535 MB<br />
+版权所有 &copy; 2005-2018 上海商派软件有限公司，并保留所有权利。
+</div>
+</body>
+<script type="text/javascript">
+	var oButtonreset = document.getElementsByClassName("button_reset")[0];
+	var oButtondata = document.getElementsByClassName("button_date")[0];
+	oButtondata.onclick=function(){
+		var form = new FormData(); // FormData是H5新特性
+			form.append("goods_name",document.getElementsByClassName("goods_name")[0].value)
+			form.append("cargo",document.getElementsByClassName("goods_sn")[0].value)
+			form.append("brand",document.getElementsByClassName("brand_id")[0].value)
+			form.append("myprice",document.getElementsByClassName("shop_price")[0].value)
+			form.append("waiprice",document.getElementsByClassName("market_price")[0].value)
+			form.append("goodsimg",document.getElementsByClassName("goods_img")[0].files[0])
+			form.append("inventory","99")
+			form.append("sales",document.getElementsByClassName("virtual_sales")[0].value)
+		var xhr = new XMLHttpRequest();
+		xhr.open("POST","/api/addgoodsAction")
+		xhr.onreadystatechange = function(){
+			if(xhr.readyState ==4 && xhr.status==200 ){
+				var res = JSON.parse(xhr.responseText)
+				alert(res.message)
+			}
+		}
+		xhr.send(form);
+	}
+</script>
+</html>

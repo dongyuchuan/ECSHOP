@@ -1,0 +1,152 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	background:url(../images/ecshop-bg.png) no-repeat;
+	background-size:100% 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+.box{
+	height: 100%;
+	overflow: hidden;
+}
+.logo{
+	height: 44px;
+	background: none;
+	padding: 40px 0 40px 50px;
+}
+.logo>img{
+	width: 155px;
+	height: 38px;
+}
+.center-warp{
+	width: 475px;
+	height: 505px;
+	overflow: hidden;
+	margin: auto;
+}
+.bd-logo{
+	width: 380px;
+	margin: auto;
+}
+.bd-logo>img{
+	width: 248px;
+	height: 65px;
+	margin-left: 66px;
+	
+}
+.conter-panel{
+	width: 475px;
+	height: 392px;
+}
+.conter-bd{
+	margin-top: 50px;
+	width: 475px;
+	height: 392px;
+	background: url(../images/icloud-bar.png) no-repeat 0 bottom;
+}
+.conter-panel{
+	width: 302px;
+	height: 321px;
+	background: #ebecec;
+	padding: 5px 70px 25px;
+	margin: auto;
+	color:#A1A1A1;
+	overflow: hidden;
+	box-shadow: 5PX 2PX 20PX rgba(0,0,0,.3);
+}
+.conter-panel2{
+	position: relative;
+	width: 300px;
+	height: 50px;
+	background: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+}
+h3{
+	  padding-bottom: 10px;
+    line-height: 1;
+    font-size: 18px;
+    margin: 18px 0;
+    text-align: center;
+    font-weight: normal;
+		background: #ebecec;
+    
+}
+.conter-panel2 input{
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	color: #8a8a8a;
+	border: none;
+	text-indent: 50px;
+	background: #fff;
+	-webkit-appearance: none;
+	box-shadow: inset 30px 30px 0 30px #fff;
+}
+.conter-panel2 i{
+	font-size: 24px;
+	position: absolute;
+	left: 15px;
+	top: 10px;
+}
+.yzm{
+	position: absolute;
+	left: 196px;
+	top: 8px;
+	width: 104px;
+	height: 36px;
+}
+.yzm>img{
+	width: 104px;
+	height: 36px;
+}
+.content-btn{
+	margin-top:20px ;
+}
+.btn-a{
+	  display: block;
+    color: #FFF;
+    width: 100%;
+    font-size: 16px;
+    line-height: 51px;
+    text-align: center;
+    background-color: #fc7878;
+    border: 0;
+    border-radius: 4px;
+    letter-spacing: 4px;
+    margin-top: 0px;
+}
+.content-info{
+	margin-top: 10px;
+	font-size: 12px;
+}
+.content-info input{
+	float: left;
+    width: 15px;
+    height: 15px;
+    margin: 2px 8px 0 0;
+}
+.content-info label{
+	float: left;
+	
+}
+.content-info .a1{
+	float: left;
+	margin-left: 30px;
+	
+}
+.content-info .a2{
+	float: right;
+	
+}

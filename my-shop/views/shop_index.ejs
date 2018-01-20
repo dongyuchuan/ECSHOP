@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+	<script type="text/javascript" src="/javascripts/artTemplate.js"></script>
+	<link rel="stylesheet" href="stylesheets/shop_index.css" />
+	
+</head>
+<body>
+		<div class="header">
+			<div class="top-logo">
+				<img src="images/topLogo.png" alt="" />
+			</div>
+			<div id="top-submenu"></div>
+		</div>
+		<div id="top-nav"></div>
+		<div class="content">
+			<div class="mune-div">
+				<div class="gps">
+					<p><span>导航菜单</span></p>
+				</div>
+				<ul class="menu-ul" id="menu-ul">
+					<li class="li1" id="li1">商品管理
+						<ol id="ols">
+							<li><a href="/html/list.html" target="content">商品列表</a></li>
+							<li><a href="/html/tianjia.html" target="content">添加新商品</a></li>
+						</ol>
+					</li>
+					<li class="li2">促销管理</li>
+					<li class="li3">订单管理</li>
+					<li class="li4">广告管理</li>
+					<li class="li5">报表统计</li>
+					<li class="li6">文章管理</li>
+					<li class="li7">会员管理</li>
+					<li class="li8">权限管理</li>
+					<li class="li9">系统设置</li>
+					<li class="li10">模板管理</li>
+					<li class="li11">数据库管理</li>
+					<li class="li12">短信管理</li>
+					<li class="li13">推荐管理</li>
+					<li class="li14">邮件群发管理</li>
+					<li class="li15">移动版管理</li>
+					<li class="li16">模板堂知识库</li>
+				</ul>
+				
+			</div>
+			<iframe id="content" name="content" src="/html/home.html" width="80%" height="1000"  frameborder="no">
+				
+			</iframe>
+		</div>
+</body>
+</html>
+<script type="text/html" id="template">
+			{{if level=='manager'}}
+
+				<ul>
+					{{each userList  item i}}
+					<li>
+						<a href="#">
+							<img src="images/{{item.img}}" alt="" />
+							<span>{{item.shuom}}</span>
+						</a>
+					</li>
+					{{/each}}
+				</ul>
+			{{/if}}
+
+</script>
+
+<script type="text/javascript">
+var data = {
+	level:"manager",
+	userList: [
+		{shuom: "更多模板堂产品", img: "topmune00.png"},
+		{shuom: "开店向导", img: "topmune01.png"},
+		{shuom: "记事本", img: "topmune02.png"},
+		{shuom: "刷新", img: "topmune03.png"},
+		{shuom: "个人设置", img: "topmune04.png"},
+		{shuom: "管理员留言", img: "topmune05.png"},
+		{shuom: "查看网店", img: "topmune06.png"},
+		{shuom: "帮助", img: "topmune07.png"},
+		{shuom: "关于 ECSHOP", img: "topmune08.png"},
+		{shuom: "清楚缓存", img: "topmune09.png"},
+		{shuom: "退出", img: "topmune10.png"}
+		
+		
+		
+	]
+}
+var html = template('template', data);
+document.getElementById("top-submenu").innerHTML = html;
+</script>
+
+<script type="text/html" id="template1">
+			{{if level=='manager1'}}
+				<ul>
+					{{each NavList  item i}}
+					<li>
+						<a href="/html/home.html" target="content">
+							<img src="{{item.img}}" alt="" />
+							<span>{{item.shuom1}}</span>
+							<i>{{item.num}}</i>
+						</a>
+					</li>
+					{{/each}}
+				</ul>
+			{{/if}}
+
+</script>
+<script type="text/javascript">
+	var data = {
+	level:"manager1",
+	NavList: [
+		{shuom1: "起始页", img: "images/index-00.png"},
+		{shuom1: "设置导航栏", img: "images/index-01.png"},
+		{shuom1: "商品管理", img: "images/index-02.png",img1:"hs.png",num:"5"},
+		{shuom1: "订单管理", img: "images/index-03.png",img1:"hs.png",num:"0"},
+		{shuom1: "广告管理", img: "images/index-04.png",img1:"hs.png",num:"0"},
+		{shuom1: "用户评论", img: "images/index-05.png",img1:"hs.png",num:"0"},
+		{shuom1: "商品列表"},
+		{shuom1: "订单列表"},
+		{shuom1: "用户评论"},
+		{shuom1: "会员列表"},
+		{shuom1: "商店设置"},
+		{shuom1: "移动版"},
+		{shuom1: "服务市场"}
+	]
+}
+var html = template('template1', data);
+document.getElementById("top-nav").innerHTML = html;
+</script>
+
+
+<script type="text/javascript">
+	 $(function(){  
+       $("#menu-ul li").click(
+       	function(e){
+       	  e.stopPropagation();
+          $(this).stop().find("ol").toggle(100);  
+       	})
+    });  
+</script>

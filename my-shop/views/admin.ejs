@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title><%= title %></title>
+	<link rel="stylesheet" href="stylesheets/style.css" />
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
+	
+</head>
+<body>
+	<div class="box">
+		<div class="logo">
+			<img src="/images/shopex.png" alt="" />
+		</div>
+		<div class="center-warp">
+			<div class="bd-logo">
+				<img src="images/ecshop-logo.png" alt="" />
+			</div>
+			<div class="conter-bd">
+				<div class="conter-panel">
+						<h3></h3>
+						<div class="conter-panel2">
+							<i class="iconfont icon-zhucedengluyonghuming"></i>
+							<input type="text" placeholder="用户名" id="username"/>
+						</div>
+						<div class="conter-panel2">
+							<i class="iconfont icon-mima"></i>
+							<input type="password" placeholder="密码" id="psw" />
+						</div>
+						<div class="conter-panel2">
+							<i class="iconfont icon-ecurityCode"></i>
+							<input type="password" placeholder="验证密码" />
+							<div class="yzm">
+								<img src="images/a.png" onclick="this.src="index.php?act=captcha&"+Math.random()"alt="CAPTCHA" style="cursor: pointer;" title="换一张" />
+							</div>
+						</div>
+						<div>
+							<div class="content-btn">
+								<input type="submit" value="登录" class="btn-a" onclick="login()"/>
+							</div>
+							<div class="content-info">
+								<input type="checkbox" />
+								<label for="remember">保存登录信息</label>
+								<a class="a1" href="#">忘记密码?</a>
+								<a class="a2" href="#">去店铺首页>></a>
+	
+							</div>
+						</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+	function login(){
+		$.ajax({
+			url:"/api/admin_index",
+			type:"post",
+			data:{
+				username:$("#username").val(),
+				psw:$("#psw").val()
+			},
+			success:function(res){
+				console.log(res)
+				if(res.code==1){
+					alert(res.message)
+					location.href = "/shop_index"
+				}else{
+					alert(res.message)
+				}
+			}
+			
+		})
+	}
+</script>
+</html>

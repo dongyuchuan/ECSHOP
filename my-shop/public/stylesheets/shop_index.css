@@ -1,0 +1,226 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	overflow: hidden;
+	background:#303030;
+}
+li,ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.header{
+	width: 100%;
+	height: 76px;
+	position: relative;
+	overflow: hidden;
+}
+.top-logo{
+	float: left;
+	width: 262px;
+	height: 45px;
+	margin-top: 20px;
+	margin-left: 30px;
+}
+.top-logo>img{
+	width: 150px;
+	height: 39px;
+}
+#top-submenu{
+	float: right;
+	height: 65px;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#top-submenu ul li{
+	float: left;
+	margin-top: 10px;
+}
+#top-submenu ul li a{
+	display: inline-block;
+	width: 82px;
+	height: 65px;
+}
+#top-submenu ul li:first-child a{
+	width: 102px;
+}
+#top-submenu ul li a img{
+	margin: auto;
+	display: block;
+	height: 35px;
+}
+#top-submenu ul li a span{
+	display: inline-block;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	color: #fff;
+}
+#top-submenu ul li:first-child a span{
+	color: yellow;
+}
+
+/*top-nav*/
+#top-nav{
+	height: 41px;
+	position: relative;
+	overflow: hidden;
+}
+#top-nav>ul{
+	width: 100%;
+	height: 41px;
+	background: #575757;
+	border-bottom: 1px solid #212121;
+	position: absolute;
+	left: 0;
+	top: 0;
+	
+}
+#top-nav>ul li{
+	float: left;
+	width: 72px;
+	height: 41px;
+	text-align: center;
+}
+#top-nav ul li a{
+	display: inline-block;
+	width: 72px;
+	height: 41px;
+	line-height: 41px;
+}
+#top-nav ul li a:nth-child(-n+6){
+	width: 141px;
+	height: 41px;
+}
+#top-nav>ul li:nth-child(-n+6){
+	width: 141px;
+	height: 41px;
+}
+#top-nav ul li a img{
+	vertical-align: middle
+}
+#top-nav ul li a span{
+	color: #fff;
+	height: 21px;
+	font-size: 14px;
+	vertical-align: middle
+}
+#top-nav ul li:nth-child(3) i, #top-nav ul li:nth-child(4) i, #top-nav ul li:nth-child(5) i, #top-nav ul li:nth-child(6) i{
+	display: inline-block;
+	width: 32px;
+	height: 16px;
+	color: #fff;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 16px;
+	background: url(../images/hs.png) no-repeat;
+	
+}
+i{
+	font-size: 12px;
+	text-align: center;
+}
+
+/*导航菜单*/
+.content{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+.mune-div{
+	width: 12%;
+	height: 651px;
+	overflow-y: scroll;
+	float: left;
+}
+.gps{
+	width: 100%;
+	height: 34px;
+	color: #fff;
+	line-height: 34px;
+	text-indent: 40px;
+}
+.menu-ul{
+	    list-style-type: none;
+	    background: #575757;
+}
+.menu-ul li{
+	width: 100%;
+	color: #fff;
+	line-height: 43px;
+	text-indent: 40px;
+	border-top:#7f7f7f 1px solid;
+	font-size: 14px;
+}
+.li1{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_1.png) no-repeat;
+}
+.li2{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_2.png) no-repeat;
+}
+.li3{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_3.png) no-repeat;
+}
+.li4{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_4.png) no-repeat;
+}
+.li5{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_5.png) no-repeat;
+}
+.li6{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_6.png) no-repeat;
+}
+.li7{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_7.png) no-repeat;
+}
+.li8{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_8.png) no-repeat;
+}
+.li9{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_9.png) no-repeat;
+}
+.li10{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_10.png) no-repeat;
+}
+.li11{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_11.png) no-repeat;
+}
+.li12{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_12.png) no-repeat;
+}
+.li13{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_13.png) no-repeat;
+}
+.li14{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_14.png) no-repeat;
+}
+.li15{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_15.png) no-repeat;
+}
+.li16{
+	background: url(http://www.doudoufei.top/shops/admin/images/menu_16.png) no-repeat;
+}
+.menu-ul li ol{
+	height: 100%;
+	display: none;
+	
+}
+.menu-ul li ol li{
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	border: none;
+	line-height: 30px;
+}
+.menu-ul li ol li a{
+	color: #fff;
+}
+iframe{
+	float: right;
+	width: 87%;
+	
+}

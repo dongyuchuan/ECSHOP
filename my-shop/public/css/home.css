@@ -1,0 +1,167 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background: url(http://www.doudoufei.top/shops/admin/images/body_bj.jpg);
+	padding: 10px;
+    min-width: 773px;
+    font-family: Microsoft Yahei;
+    
+}
+body{
+	overflow-y: scroll;
+}
+ul,li{
+	list-style-type: none;
+}
+
+h1{
+	border-bottom: 1px solid #ccc;
+    color: #333;
+    font-weight: normal;
+    padding: 7px 10px;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+h1>a{
+	color: #333;
+	text-decoration: none;
+}
+h1 a:hover{
+	text-decoration:underline;
+	color: #CC0000;
+}
+.home-chakan{
+	color: #CC0000;
+	padding: 0 10px 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 14px;
+    background: none;
+}
+.home-chakan>a{
+	text-decoration: none;
+}
+.home-tishi{
+	color: #CC0000;
+}
+.start1{
+	border: 1px solid #CC0000;
+    background: #ffffcc;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/*总数列表*/
+
+.home-zongshi{
+	width: 100%;
+}
+.home-zongshi .start2{
+	float: left;
+    margin-left: 1%;
+    width: 24.24%;
+    background: #000;
+    height: 80px;
+    min-width: 187px;
+    position: relative;
+}
+.start2:first-child{
+	margin-left: 0;
+	background:#27a9e3 ;
+}
+.start2:nth-last-child(1){
+	background:#ffb848;
+}
+.start2:nth-last-child(2){
+	background:#852b99;
+}
+.start2:nth-last-child(3){
+	background:#28b779 ;
+}
+
+.home-zongshi .start2 img{
+	position: absolute;
+    top: 10px;
+    left: 20px;
+    border: none;
+}
+.home-jinri h2{
+	position: absolute;
+	top: 8px;
+	right: 20px;
+	font-size: 14px;
+    font-weight: 100;
+    font-family: "å¾®è½¯é›…é»‘";
+    color: #fff;
+    padding: 7px 0 5px;
+}
+.home-jinri p{
+	position: absolute;
+	bottom: 8px;
+	right: 20px;
+	font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+/*订单*/
+
+.order{
+	width: 100%;
+}
+.item01{
+	width: 13.05%;
+    margin: 15px 0 0 1%;
+    background: #fff url(http://www.doudoufei.top/shops/admin/images/bj02.jpg) 0 bottom repeat-x;
+    min-width: 150px;
+    display: inline-block;
+    vertical-align: top;
+    height: 62px;
+}
+.item01:first-child{
+	margin-left: 0%;
+}
+.order-img{
+	float: left;
+    width: 60px;
+    text-align: center;
+    height: 60px;
+    border-right: 1px solid #e2e2e2;
+}
+.order-img>img{
+	width: 30px;
+    height: auto;
+    margin-top: 26%;
+}
+.order-text{
+	padding: 10px 0 0 15px;
+    float: left;
+}
+.order-text h2{
+	font-size: 12px;
+    font-weight: 100;
+    font-family: "微软雅黑";
+    color: #6a6a6a;
+}
+.order-text p{
+	font-size: 24px;
+    font-weight: 700;
+}
+.order-text>p>a{
+	color: #192E32;
+	text-decoration: none;
+}
+
+/*footer*/
+.list-footer2{
+	background: #f3f3f3 url(http://www.doudoufei.top/shops/admin/images/th_bg.gif) repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 600px;
+}

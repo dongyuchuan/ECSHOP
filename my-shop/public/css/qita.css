@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.tab3{
+	background: #fefefe;
+	padding:10px;
+}
+table{
+	margin:0 auto;
+	font-size: 12px;
+}
+.label{
+	text-align: right;
+    vertical-align: top;
+    font-weight: bold;
+    padding: 5px 1em;
+    width: 30%;
+    line-height: 30px;
+   
+}
+td input{
+	float: left;
+	margin: 5px;
+}
+tr td:first-child input{
+	float: left;
+	margin: 10px 0 5px 150px;
+	vertical-align: top;
+    font-weight: bold;
+    padding: 5px 1em;
+    line-height: 30px;
+}
+tr td:nth-child(2) .a1{
+	float: left;
+	height: 17px;
+	margin: 5px;
+    padding: 1px 5px;
+    border: 1px solid #91C4D0;
+    border-right: 2px solid #278296;
+    border-bottom: 2px solid #278296;
+    background: #DDEEF2;
+    text-decoration: none;
+    font-weight: 400;
+}
+tr td:nth-child(2) .a2{
+	float: left;
+	margin: 5px;
+}
+td div	{
+	float: left;
+    margin: 10px 0px 0px 5px;
+    background-color: rgb(192, 192, 192);
+}
+td i{
+	float: left;
+	margin: 5px 0;
+	
+}
+td select {
+	float: left;
+	height: 22px;
+	margin: 5px 0;
+	margin-left: 10px;
+	font-size: 12px;
+}
+.button{
+	padding: 5px 15px 5px;
+    margin: 2px 2px;
+    border: none;
+    background: #ff3f3f;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.xing{
+	margin-left: 1em;
+    font: 12px verdana;
+    color: #FF0000;
+}
+.notice-span{
+	display: inline-block;
+	margin-bottom: 2px;
+}
+.tj-cz {
+	text-align: center;
+    padding: 3px 0;
+}
+/*footer*/
+.list-footer2{
+	background: #f3f3f3 url(http://www.doudoufei.top/shops/admin/images/th_bg.gif) repeat-x;
+    border: 1px solid #ddd;
+    padding: 15px;
+    color: #9CACAF;
+    margin: 10px 0;
+    text-align: center;
+    margin-bottom: 600px;
+}
