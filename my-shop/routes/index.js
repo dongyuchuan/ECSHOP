@@ -53,8 +53,6 @@ router.post('/api/admin_index', function(req, res, next) {
 		})
 });
 
-module.exports = router;
-
 
 //后台 addgoods页面
 router.get('/addgoods', function(req, res, next) {
@@ -102,3 +100,26 @@ router.post('/api/addgoodsAction', function(req, res, next) {
 		})
 	})
 });
+
+//后台商品管理页面 实时更新
+router.get('/updatagoods', function(req, res, next) {
+		GoodsModel.find({},function(err,docs){
+			console.log(docs.length)
+			res.json(docs)
+		})
+});
+
+
+//删除
+router.get('/update', function(req, res, next) {
+		var id = req.query.id;
+		console.log(id);
+		GoodsModel.update({id:id},{$regex:{indate:0}}, function(err){
+			if(err){
+				console.log(err);
+			}else{
+				res.send("删除成功");
+			}
+		})
+});
+module.exports = router;

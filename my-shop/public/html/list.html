@@ -2,19 +2,20 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title></title>
+<title>列表页面</title>
 <link rel="stylesheet" href="../css/list.css" />
+	<script type="text/javascript" src="/javascripts/jquery.min.js"></script>
 </head>
 <body>
 <div class="list-header">
 	<a class="a1" href="">ECSHOP 管理中心</a>
 	<span>- 商品列表</span>
-	<img src="http://www.doudoufei.top/shops/admin/images/jnsy.png" alt="" />
-	<a class="a2" href="#">添加新商品</a>
+	<img src="/images/jnsy.png" alt="" />
+	<a class="a2" href="/html/tianjia.html">添加新商品</a>
 </div>
 <div class="list-sousuo">
 	<form action="">
-		<img src="http://www.doudoufei.top/shops/admin/images/icon_search.gif" alt="" />
+		<img src="/images/icon_search.gif" alt="" />
 		<select name="" id="" style="width: 158px;height: 20px;" >
 			 <option value ="所有分类">所有分类</option>
 		</select>
@@ -33,83 +34,43 @@
 	</form>
 </div>
 <table class="tab1" border="0" cellspacing="3" cellpadding="1">
-	<tr>
-		<th><input type="checkbox" />编号</th>
-		<th>商品名称</th>
-		<th>货号</th>
-		<th>价格</th>
-		<th>上架</th>
-		<th>精品</th>
-		<th>新品</th>
-		<th>热销</th>
-		<th>推荐排序</th>
-		<th>库存</th>
-		<th>虚拟操作</th>
-		<th>操作</th>
-	</tr>
-	<tr>
-		<td><input type="checkbox" />193</td>
-		<td>q</td>
-		<td>ECS000193</td>
-		<td>0.00</td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td>100</td>
-		<td>1</td>
-		<td>0</td>
-		<td>
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" alt="" />
-		</td>
-		
-		
-	</tr>
-	<tr>
-	   <td><input type="checkbox" />170</td>
-		<td>青岛小龙虾</td>
-		<td>435faabcccccccc</td>
-		<td>1111.00</td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td>100</td>
-		<td>199</td>
-		<td>123</td>
-		<td>
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" alt="" />
-		</td>
-		
-		
-	   
-	</tr>
-	<tr>
-		<td><input type="checkbox" />167</td>
-		<td>阿萨德</td>
-		<td>ECS000167</td>
-		<td>0.00</td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" /> </td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/no.gif" alt="" /></td>
-		<td><img src="http://www.doudoufei.top/shops/admin/images/yes.gif" alt="" /></td>
-		<td>100</td>
-		<td>1</td>
-		<td>0</td>
-		<td>
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_view.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_edit.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_copy.gif" alt="" />
-			<img src="http://www.doudoufei.top/shops/admin/images/icon_trash.gif" alt="" />
-		</td>
-		
-	</tr>
+	<tbody>
+		<tr>
+			<th><input type="checkbox" />编号</th>
+			<th>商品名称</th>
+			<th>货号</th>
+			<th>价格</th>
+			<th>上架</th>
+			<th>精品</th>
+			<th>新品</th>
+			<th>热销</th>
+			<th>推荐排序</th>
+			<th>库存</th>
+			<th>虚拟操作</th>
+			<th>操作</th>
+		</tr>
+	</tbody>
+	<tbody class="list_td">
+		<!--<tr>
+			<td><input type="checkbox" />193</td>
+			<td>q</td>
+			<td>ECS000193</td>
+			<td>0.00</td>
+			<td><img src="/images/yes.gif" alt="" /></td>
+			<td><img src="/images/no.gif" alt="" /></td>
+			<td><img src="/images/yes.gif" alt="" /></td>
+			<td><img src="/images/yes.gif" alt="" /></td>
+			<td>100</td>
+			<td>1</td>
+			<td>0</td>
+			<td>
+				<a href=""><img src="/images/icon_view.gif" alt="" /></a>
+				<a href=""><img src="/images/icon_edit.gif" alt="" /></a>
+				<a href=""><img src="/images/icon_copy.gif" alt="" /></a>
+				<a href=""><img src="/images/icon_trash.gif" alt="" /></a>
+			</td>
+		</tr>-->
+	</tbody>
 </table>
 <table class="tab2" cellspacing="0">
   <tr>
@@ -120,12 +81,15 @@
 	        页当前第 <span id="pageCurrent">1</span>
 	        页，每页 <input type='text' size='3' id='pageSize' value="15" onkeypress="return listTable.changePageSize(event)" />
 	        <span id="page-link">
-	          <a href="#">第一页</a>
-	          <a href="#">上一页</a>
-	          <a href="#">下一页</a>
-	          <a href="#">最末页</a>
+	            <a href="javascript:;" id="firstPage">第一页</a>
+		        <a href="javascript:;" id="upPage">上一页</a>
+		        <a href="javascript:;" id="downPage">下一页</a>
+		        <a href="javascript:;" id="endPage">最末页</a>
 	          <select id="gotoPage" onchange="listTable.gotoPage(this.value)">
-	            <option value='1'>1</option>          </select>
+	            <option value='1'>1</option>
+	            <option value='2'>1</option>
+	            <option value='3'>1</option> 
+	          </select>
 	        </span>
   		</div>
     </td>
@@ -142,4 +106,76 @@
 版权所有 &copy; 2005-2018 上海商派软件有限公司，并保留所有权利。
 </div>
 </body>
+<script type="text/javascript">
+function load(goods_name){
+	$.ajax({
+			type:"get",
+			url:"/updatagoods",
+			data:{
+				goods_name:"",
+			},
+			success:function(res){
+				console.log(res)
+				setData()
+				function setData(){
+					var str = "";
+					var len = res.length;
+					var listtd=document.getElementsByClassName("list_td")[0];
+					for(var i=0;i<len;i++){
+						var id = res[i].id;
+						var goods_name = res[i].goods_name;
+						var cargo = res[i].cargo;
+						var brand = res[i].brand;
+						var myprice = res[i].myprice;
+						var waiprice = res[i].waiprice;
+						var goodsimg = res[i].goodsimg;
+						var inventory = res[i].inventory;
+						var sales = res[i].sales;
+						if(i<len){
+							str += `<tr>
+									<td><input type="checkbox" value=""/><span>${id}</span></td>
+									<td>${goods_name}</td>
+									<td>${cargo}</td>
+									<td>${myprice}</td>
+									<td><img src="/images/yes.gif" alt="" /></td>
+									<td><img src="/images/no.gif" alt="" /></td>
+									<td><img src="/images/yes.gif" alt="" /></td>
+									<td><img src="/images/yes.gif" alt="" /></td>
+									<td>100</td>
+									<td>${inventory}</td>
+									<td>${sales}</td>
+									<td>
+										<a href="#" target="_blank" title="查看"><img src="/images/icon_view.gif" alt="" /></a>
+										<a href="#" target="_blank" title="编辑"><img src="/images/icon_edit.gif" alt="" /></a>
+										<a href="#" target="_blank" title="复制"><img src="/images/icon_copy.gif" alt="" /></a>
+										 <a class="update" href="#" title="回收站" id ="${id}" onclick="update(${id})"><img src="/images/icon_trash.gif" alt="" /></a>
+									</td>
+								   </tr>`
+						}
+						$(listtd).html(str)
+					}
+	
+				}
+			}
+	})
+}
+load();
+
+//删除商品
+function update(id){
+	if(confirm("确定删除这件商品吗")){
+		$.ajax({
+			type:"get",
+			url:"/update",
+			data:{
+			id:id,
+			},
+			success:function(res){
+				alert(res);
+				load();
+			}
+		})
+	}
+}
+</script>
 </html>

@@ -93,6 +93,12 @@ form{
     border-radius: 3px;
 }
 
+.list_td{
+	width: 100%;
+}
+.list_td tr{
+	width: 100%;
+}
 /*表格1*/
 .tab1{
 	width: 100%;

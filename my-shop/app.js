@@ -12,8 +12,6 @@ mongoose.connect('mongodb://localhost/h1723');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
-// 首先导入 goods 的路由文件
-var goods = require('./routes/goods');
 
 var app = express();
 
@@ -39,7 +37,7 @@ app.use(session({
 // 新增路由商品，这个文件中的都是一级路由,这个路由到router下边的good,然后router那个good二级路由到 model 下边的goods
 app.use('/', index);
 app.use('/users', users);
-app.use('/goods', goods);
+app.use('/goods', users);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
